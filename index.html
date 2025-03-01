@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentitEase - Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .product-price {
+            color: #28a745;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .rent-button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .rent-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">RentitEase - Find What You Need</div>
+    <div class="container">
+        <div class="grid-container">
+            <div class="product-card">
+                <img src="furniture.jpg" alt="Furniture">
+                <div class="product-title">Luxury Sofa Set</div>
+                <div class="product-price">₹2,500/month</div>
+                <button class="rent-button">Rent Now</button>
+            </div>
+            <div class="product-card">
+                <img src="laptop.jpg" alt="Laptop">
+                <div class="product-title">MacBook Pro</div>
+                <div class="product-price">₹3,000/month</div>
+                <button class="rent-button">Rent Now</button>
+            </div>
+            <div class="product-card">
+                <img src="bike.jpg" alt="Bike">
+                <div class="product-title">Yamaha R15</div>
+                <div class="product-price">₹5,000/month</div>
+                <button class="rent-button">Rent Now</button>
+            </div>
+            <div class="product-card">
+                <img src="tv.jpg" alt="TV">
+                <div class="product-title">55" Smart LED TV</div>
+                <div class="product-price">₹2,000/month</div>
+                <button class="rent-button">Rent Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
